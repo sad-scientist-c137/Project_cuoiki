@@ -17,7 +17,7 @@ $products = mysqli_query($con, "SELECT * FROM `product` ORDER BY `id` ASC");
                 <section class="product-item <?php if ($num % 4 == 1) { ?> first-line <?php } ?> ">
                     <section class="product-image"><a href="detail.php?id=<?= $row['id'] ?>"><img src="<?= $row['image'] ?>" title="<?= $row['name'] ?>" /></a></section> 
                     <section class="product-name"><a href="detail.php?id=<?= $row['id'] ?>"><?= $row['name'] ?></a></section>
-                    <section class="product-content"><a href="detail.php?id=<?= $row['id'] ?>"><?= $row['content'] ?></a></section>
+                    
                 </section>
                 <?php
                 $num++;
